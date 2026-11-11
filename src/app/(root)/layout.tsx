@@ -1,3 +1,4 @@
+import Navbar from '@/components/shared/Navbar'
 import React, { ReactNode } from 'react'
 
 interface LayoutProps {
@@ -5,7 +6,12 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  return <div>{children}</div>
+  return (
+    <div>
+      <Navbar />
+      {children}
+    </div>
+  )
 }
 
 export default Layout
